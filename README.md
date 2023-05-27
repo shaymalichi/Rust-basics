@@ -1,8 +1,9 @@
 # Rust Basics
 
 ## Introduction
-- Briefly introduce yourself and your topic
-- Set the context and explain why it is important or interesting
+Rust is strongly typed and statically typed language.
+- strongly typed: the type of all variables known and checked during compilation, insted of during runtime like languages like python and javascript.   
+- strongly typed: type conversions need's to be explicied otherwise will result in compilation error. 'let x = 3.14'   
 
 ## Main Points
 1. First main point
