@@ -14,13 +14,17 @@ Rust is strongly typed and statically typed language.
 | garbage collector | Ownership | 
 |-----------------|-----------------|
 |software that during runtime checks for unused data  |release data based on program structure  |
-| slow, software in the background | more efficient |
+| slow, software in the background | more efficient (like a deterministic garbage collector) |
+
+
 
 ### rules of ownership: 
 - any data has a unieqe "Owner"
 - owner that goes out of the scope gets dropped.
 - binding variables moves ownership 
 - there are mutable references and immutable references (only 1 mutable reference or as many immutable references)
+
+
 
 
 
