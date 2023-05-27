@@ -1,28 +1,33 @@
 # Rust Basics
 
-## Introduction
 Rust is strongly typed and statically typed language.
-- strongly typed: the type of all variables known and checked during compilation, insted of during runtime like languages like python and javascript.   
-- strongly typed: type conversions need's to be explicied otherwise will result in compilation error. 'let x = 3.14'   
+- strongly typed: all variable type known and checked during compilation.
+- strongly typed: type conversions need's to be explicit otherwise will result in compilation error. 
+##### rust using an ownership system in order to maintain security of software. 
 
-| Column 1 Heading | Column 2 Heading |
+
+## Ownership
+- set of rules of how a rust program manages memory. 
+- strict rules that insures memory safety.
+- alternative to a garbage collector. 
+
+| garbage collector | Ownership | 
 |-----------------|-----------------|
-| Row 1, Column 1 | Row 1, Column 2 |
-| Row 2, Column 1 | Row 2, Column 2 |
-| Row 3, Column 1 | Row 3, Column 2 |
+|software that during runtime checks for unused data  |release data based on program structure  |
+| slow, software in the background | more efficient |
 
-## Main Points
-1. First main point
-   - Supporting details or examples
-   - Bullet points or sub-points
-   
-2. Second main point
-   - Supporting details or examples
-   - Bullet points or sub-points
-   
-3. Third main point
-   - Supporting details or examples
-   - Bullet points or sub-points
+### rules of ownership: 
+- any data has a unieqe "Owner"
+- owner that goes out of the scope gets dropped.
+- binding variables moves ownership 
+- there are mutable references and immutable references (only 1 mutable reference or as many immutable references)
+
+
+
+
+
+
+
    
 ## Conclusion
 - Summarize the main points
