@@ -92,7 +92,42 @@ enum Result<T, E> {
 
 
 
-## Types, Traits, and Lifetimes
+## Genetic Types, Traits, and Lifetimes
+#### syntax
+functions:
+```
+fn largest<T>(list: &[T]) -> &T {}// largest accepts array that contains any type. 
+```
+enums:
+```
+enum Result<T, E> { 	 
+	Ok(T), // can hold any type value T
+	Err(E), // E is an error object that have methods based on the error returned
+}
+```
+### Traits:
+- similar to interface in java (more similar to typeclass in haskell). 
+- traits are used to define behiviour of types allowing for polymorphism and overloading functions.
+- enables to define generic function with constrains on types that implement some trait (iterables, etc..)
+#### we define trait using this syntax 
+```
+pub trait Summary { 
+	fn summarize(&self) -> String;
+}
+```
+each type can implement the trait Summery and has to implement all functions of that trait. 
+
+traits as a parameters: 
+```
+pub  fn notify(item: &impl Summary) {
+	println!("Breaking news! {}", item.summarize()); 
+}
+```
+notify is a function that accepts as input only types that implement Summary trait.  
+
+
+
+
 - Encourage the audience to ask questions or provide feedback
 - Allocate time for discussion, if applicable
 
