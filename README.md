@@ -126,9 +126,7 @@ pub  fn notify(item: &impl Summary) {
 notify is a function that accepts as input only types that implement Summary trait.  
 
 
+``pub  fn notify<T: Summary + Display>(item: &T) {}``
+notify is a function that accepts as input only references to types that implement Summary trait **and** Display trait.  
 
 
-- Encourage the audience to ask questions or provide feedback
-- Allocate time for discussion, if applicable
-
-- safe code that force you to check all cases and handle them explicitly.
